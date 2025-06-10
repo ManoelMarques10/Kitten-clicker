@@ -1,0 +1,63 @@
+<!DOCTYPE html> <!-- Define o tipo do documento como HTML5 -->
+<html lang="pt-br"> <!-- Define o idioma da página como português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação dos caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna o layout responsivo -->
+    <title>Clciker</title> <!-- Título da aba do navegador -->
+    <link rel="stylesheet" href="style.css"> <!-- Conecta o arquivo CSS externo -->
+</head>
+<body>
+
+    <!-- Imagens clicáveis do jogo -->
+    <div>
+        <!-- Novelo que gera dinheiro ao clicar -->
+        <img src="/Imgs/Novelo.png" alt="Novelo" id="Novelo"
+             onclick="clicou()"
+             onmouseenter="aumentar.call(this)"
+             onmouseleave="diminuir.call(this)">
+
+        <!-- GatoJoia que pode ser comprado -->
+        <img src="/Imgs/GatoJoia.png" alt="GatoJoia" id="GatoJoia"
+             onclick="comprouGatoJoia()"
+             onmouseenter="aumentar.call(this)"
+             onmouseleave="diminuir.call(this)">
+
+        <!-- GatoComendo que também pode ser comprado -->
+        <img src="/Imgs/GatoComendo.gif" alt="GatoComendo" id="GatoComendo"
+             onclick="comprouGatoComendo()"
+             onmouseenter="aumentar.call(this)"
+             onmouseleave="diminuir.call(this)">
+    </div>
+
+    <!-- Textos e contadores -->
+    <div>
+        <!-- Exibe o dinheiro acumulado -->
+        <h1 id="Dinheiro">0</h1>
+
+        <!-- Quantidade de GatoJoia comprados -->
+        <h2 id="QntdGatoJoia">X0</h2>
+
+        <!-- Texto explicando o preço do GatoJoia -->
+        <h2 id="GatoJoia">GatoJoia <br>(R$10)</h2>
+
+        <!-- Quantidade de GatoComendo comprados -->
+        <h2 id="QntdGatoComendo">X0</h2>
+
+        <!-- Texto explicando o preço do GatoComendo -->
+        <h2 id="GatoComendo">GatoComendo <br>(R$105)</h2>
+    </div>
+
+    <!-- Botão especial de trapaça -->
+    <div>
+        <button id="Dinheiro_Infinito"
+                onclick="dinheiroInfinito()"
+                onmouseenter="aumentar.call(this)"
+                onmouseleave="diminuir.call(this)">
+            Dinheiro_Infinito
+        </button>
+    </div>
+
+    <!-- Conecta o script JavaScript com a lógica do jogo -->
+    <script src="script.js"></script>
+</body>
+</html>

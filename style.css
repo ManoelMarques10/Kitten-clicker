@@ -1,0 +1,109 @@
+/* Define a cor de fundo geral do corpo da página */
+body {
+  background: linear-gradient(to top, #ffe476, #ffa3a3);
+  height: 100vh;
+}
+
+/* Estiliza a imagem com ID 'Novelo' (botão principal do clicker) */
+img#Novelo {
+    width: 250px; /* Largura da imagem */
+    height: 250px; /* Altura da imagem */
+    position: absolute; /* Posição absoluta para centralização */
+    top: 50%; /* Alinha ao centro vertical */
+    left: 50%; /* Alinha ao centro horizontal */
+    transform: translate(-50%, -50%); /* Corrige para alinhar exatamente ao centro */
+    cursor: pointer; /* Cursor de mão ao passar por cima */
+    clip-path: circle(70% at 50% 50%); /* Recorta a imagem em forma circular */
+    filter: drop-shadow(5px 5px 5px black); /* Adiciona sombra à imagem */
+}
+
+/* Estiliza o título principal (provavelmente o contador de dinheiro) */
+h1 {
+    position: absolute;
+    top: 65%; /* Fica abaixo do novelo */
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Estiliza a imagem do Gato Joia (botão de compra) */
+img#GatoJoia {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 10%; /* Alinhado no topo */
+    left: 95%; /* Encostado à direita */
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    clip-path: circle(70% at 50% 50%);
+    filter: drop-shadow(5px 5px 5px black);
+}
+
+/* Estiliza o título/texto “Gato Joia” */
+h2#GatoJoia {
+    text-align: right;
+    color: rgb(255, 0, 0); /* Vermelho */
+    text-shadow: 1px 1px 1px rgb(0, 0, 0); /* Sombra para melhor contraste */
+    position: absolute;
+    top: 10%;
+    left: 87.80%; /* Fica ao lado da imagem */
+    transform: translate(-50%, -50%);
+}
+
+/* Exibe a quantidade de Gatos Joia comprados */
+h2#QntdGatoJoia {
+    color: rgb(255, 0, 0);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    position: absolute;
+    top: 5%; /* Acima do nome “Gato Joia” */
+    left: 90%;
+    transform: translate(-50%, -50%);
+    text-align: right;
+}
+
+/* Estiliza a imagem do Gato Comendo (botão de compra) */
+img#GatoComendo {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 25%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    clip-path: circle(70% at 50% 50%);
+    filter: drop-shadow(5px 5px 5px black);
+    text-align: right;
+}
+
+/* Estiliza o título/texto “Gato Comendo” */
+h2#GatoComendo {
+    text-align: right;
+    color: rgb(255, 0, 0);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    position: absolute;
+    top: 25%;
+    left: 86%;
+    transform: translate(-50%, -50%);
+}
+
+/* Exibe a quantidade de Gatos Comendo comprados */
+h2#QntdGatoComendo {
+    color: rgb(255, 0, 0);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    position: absolute;
+    top: 20%; /* Acima do nome “Gato Comendo” */
+    left: 90%;
+    transform: translate(-50%, -50%);
+}
+
+/* Botão secreto (ou de debug) para ganhar dinheiro infinito */
+button#Dinheiro_Infinito {
+    position: absolute;
+    top: 95%; /* Perto da parte inferior da tela */
+    left: 5%; /* À esquerda */
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    background-color: rgb(204, 150, 255); /* Roxo claro */
+    color: rgb(0, 0, 0); /* Texto preto */
+    padding: 5px;
+    border-radius: 10px; /* Cantos arredondados */
+}
